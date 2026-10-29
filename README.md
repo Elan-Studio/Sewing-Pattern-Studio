@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Elan Pattern Studio — GitHub Pages upload
 
 1. Create a NEW repository on GitHub, for example elan-pattern-studio. Do not use the FortInsight repository.
@@ -16,3 +17,7 @@ Saved patterns and measurements are browser-local: your laptop's saved work will
 Projector: a pattern opens immediately and the cutting mat is on by default. There is no calibration square. Expand Calibrate using mat rulers; use Calibrated cutting view at 100% scale, and measure 0–4 inches horizontally and vertically on the physical fabric (or 0–100 mm). Enter those measured spans and apply. Recheck the physical ruler spans. A fitted preview is not a cutting scale.
 
 Official instructions: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+=======
+# Sewing-Pattern-Studio
+A digital sewing pattern design application for creating, customizing, and managing sewing patterns, with tools for measurements, pattern drafting, and design automation.
+>>>>>>> origin/main
