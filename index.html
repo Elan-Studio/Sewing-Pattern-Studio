@@ -677,7 +677,7 @@ function projectorPiecesGeometry(pieces,settings={}){
 }
 function projectorSceneGeometry(piece,settings={}){
  let g=projectorPiecesGeometry(piece,settings);if(settings.mat)g=projectorMatGeometry(g,settings.unit??'in');
- if(settings.reference){const size=101.6,x=g.width+20,y=14;g={width:x+size+10,height:Math.max(g.height,y+size+10),content:g.content+'<g data-projector-reference="true"><text x="'+x+'" y="8" font-size="4">4 x 4 inches</text><rect x="'+x+'" y="'+y+'" width="101.6" height="101.6" fill="none" stroke="currentColor" stroke-width=".7"/></g>'};}
+ if(settings.reference){const size=101.6,x=g.width+20,y=14,shade=['black','white'].includes(settings.shade)?settings.shade:'none',fill=shade==='black'?'#000':shade==='white'?'#fff':'none',edge=shade==='black'?'#fff':shade==='white'?'#111':settings.light?'#111':'#fff';g={width:x+size+10,height:Math.max(g.height,y+size+10),content:g.content+'<g data-projector-reference="true"><text x="'+x+'" y="8" font-size="4">4 x 4 inches</text><rect x="'+x+'" y="'+y+'" width="101.6" height="101.6" data-reference-shade="'+shade+'" fill="'+fill+'" style="fill:'+fill+'!important;stroke:'+edge+'!important" stroke="currentColor" stroke-width=".7"/></g>'};}
  return g;
 }
 function projectorSvg(piece,settings={}){
